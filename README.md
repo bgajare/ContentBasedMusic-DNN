@@ -17,20 +17,25 @@ Bhalchandra Gajare (bhalchandra.gajare@gmail.com)
 
    The goal of this project is use only the audio content (hence `Content Based`) and without any other metadata from the audio/music tracks and build a model `Music Recommendation` that provides music recommendations of tracks from any other language that matches or sounds similar to the user liked music `language agnostic`
    
-3. Model Outcomes or Preddictions
+2. Model Outcomes or Preddictions
+   
    **Type of Learning** Supervised Learning (Classification)
    In General classification algorithms, a sample is mapped to a predicted label / class (ex: apple is classified as Fruit and Brocolli is classified as Vegetable). Though this project uses classification at its core, this really does not produce a true music recommendation system since we do not just want to match the input music to a genre and suggest another language song from the predicted genre. This project treats the problem as a classification problem and uses the model to generate a mathematical fingerprint (learned features) for every song.
+   
    a. Training
+   
        Use supervised learning to teach the model to classify several music tracks into a set of 10 genres
    b. Prediction
+   
        Once the model understands musical styles and is able to classify well, we will keep the entire model architecture, except the last stage (decision making for the label). This strategy gives rise a vector of numbers that represent what the model has learned. Note that this vector of numbers do not specifcally mean anything acoustically. They can be thought of as a `mathematical signature` of a given music track
    c. Recommendataion
+   
        We build a index (database) of mathematical signatures of all the songs that the model learns. Now, for the actual recommendation, we use a simple nearest neighbors strategy (i.e find a song whose mathematical signature is most similar to the input song) to provide a recommendation.
    
-5. Data Acquisition
-6. Data Preprocessung / Preparation
-7. Modeling
-8. Model Evaluation
+3. Data Acquisition
+4. Data Preprocessung / Preparation
+5. Modeling
+6. Model Evaluation
 
 
 ### Conclusion 
