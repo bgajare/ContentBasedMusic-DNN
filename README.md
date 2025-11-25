@@ -23,19 +23,18 @@ Bhalchandra Gajare (bhalchandra.gajare@gmail.com)
    In General classification algorithms, a sample is mapped to a predicted label / class (ex: apple is classified as Fruit and Brocolli is classified as Vegetable). Though this project uses classification at its core, this really does not produce a true music recommendation system since we do not just want to match the input music to a genre and suggest another language song from the predicted genre. This project treats the problem as a classification problem and uses the model to generate a mathematical fingerprint (learned features) for every song.
    
    a. Training
-   
-       Use supervised learning to teach the model to classify several music tracks into a set of 10 genres
+      Use supervised learning to teach the model to classify several music tracks into a set of 10 genres
+
    b. Prediction
-   
-       Once the model understands musical styles and is able to classify well, we will keep the entire model architecture, except the last stage (decision making for the label). This strategy gives rise a vector of numbers that represent what the model has learned. Note that this vector of numbers do not specifcally mean anything acoustically. They can be thought of as a `mathematical signature` of a given music track
+      Once the model understands musical styles and is able to classify well, we will keep the entire model architecture, except the last stage (decision making for the label). This strategy gives rise a vector of numbers that represent what the model has learned. Note that this vector of numbers do not specifcally mean anything acoustically. They can be thought of as a `mathematical signature` of a given music track
+
    c. Recommendataion
+      We build a index (database) of mathematical signatures of all the songs that the model learns. Now, for the actual recommendation, we use a simple nearest neighbors strategy (i.e find a song whose mathematical signature is most similar to the input song) to provide a recommendation.
    
-       We build a index (database) of mathematical signatures of all the songs that the model learns. Now, for the actual recommendation, we use a simple nearest neighbors strategy (i.e find a song whose mathematical signature is most similar to the input song) to provide a recommendation.
-   
-3. Data Acquisition
-4. Data Preprocessung / Preparation
-5. Modeling
-6. Model Evaluation
+4. Data Acquisition
+5. Data Preprocessung / Preparation
+6. Modeling
+7. Model Evaluation
 
 
 ### Conclusion 
